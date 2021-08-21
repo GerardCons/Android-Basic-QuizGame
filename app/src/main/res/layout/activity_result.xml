@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff2000"
+    tools:context=".result">
+
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="comment"
+        android:textStyle="bold"
+        android:textColor="#ffd700"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="score"
+        android:textColor="#ffd700"
+        android:textSize="100dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comment" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/retry"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="68dp"
+        android:background="#ffd700"
+        android:padding="4dp"
+        android:text="Retry"
+        android:textAllCaps="true"
+        android:textColor="#ff2000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/score" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/exit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30sp"
+        android:background="#ffd700"
+        android:padding="4dp"
+        android:text="Exit"
+        android:textAllCaps="true"
+        android:textColor="#ff2000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retry" />
+</androidx.constraintlayout.widget.ConstraintLayout>

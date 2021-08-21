@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ff2000"
+    android:layout_height="match_parent"
+    tools:context=".QuizScreen">
+
+    <TextView
+        android:id="@+id/questionAttempted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="Number of Questions"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#ffd700"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/samplePicture"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/questionAttempted"
+        android:layout_margin="10dp"
+        android:src="@drawable/splashscreen_header"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/samplePicture"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="Question"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#ffd700"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:padding="4dp"
+            android:background="#ffd700"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Option 1"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="#ff2000"
+            android:layout_marginEnd="15dp"
+            android:textSize="16sp"
+            android:id="@+id/option1"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:padding="4dp"
+            android:layout_marginStart="20dp"
+            android:background="#ffd700"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Option 2"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="#ff2000"
+            android:textSize="16sp"
+            android:id="@+id/option2"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="15dp"
+            android:padding="4dp"
+            android:background="#ffd700"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Option 3"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="#ff2000"
+            android:textSize="16sp"
+            android:id="@+id/option3"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:padding="4dp"
+            android:background="#ffd700"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Option 4"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="#ff2000"
+            android:textSize="16sp"
+            android:id="@+id/option4"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
